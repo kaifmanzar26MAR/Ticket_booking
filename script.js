@@ -49,8 +49,13 @@ var avl=80;
         let seat_num=[];
         let bookings=selectbox.value;
         if(bookings>avl){
-            document.getElementById("output").innerHTML="<div><h2>Sorry! Not enough seats available.</h2></div>";
-            document.getElementById("output").innerHTML+=`<div><h3>Only ${avl} seats left!</h3></div>`;
+            if(avl>0){
+                document.getElementById("output").innerHTML="<div><h2>Sorry! Not enough seats available.</h2></div>";
+                document.getElementById("output").innerHTML+=`<div><h3>Only ${avl} seats left!</h3></div>`;  
+            }else{
+                document.getElementById("output").innerHTML="<div><h2>Sorry! Seats are full.</h2></div>";
+            }
+            
             return;
         }
         booked+=parseInt(bookings);
