@@ -41,11 +41,15 @@
     background-color: rgb(255, 149, 0);
     margin:3px;
 }
-@media (max-width:565px) {
+@media (max-width:570px) {
     .container{
         flex-direction: column;
     }
     #show_seats{
         margin-top: 50%;
+        width: 215px;
+    }
+    .box{
+        padding: 3px;
     }
 }
