@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ticket Booking</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="show_seats"></div>
+        <br><br>
+        <div class="display">
+            <div class="avl_nav">
+                <div><div id="t"></div>Total <span id="total">80</span></div>
+                <div><div id="a"></div>Available <span id="avl">80</span></div>
+                <div><div id="b"></div>Booked <span id="booked">0</span></div>
+
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="bookings">
+                <div class="form">
+                    <label for="tiket_quan" style="font-weight: bolder;">Select Ticket Quantity</label>
+                    <select name="tiket_quan" id="tiket_quan">
+                        <option value="0">Select</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                    <button onclick="book_ticket()">Book Ticket</button>
+                </div>
+            </div>
+            <div id="output">
+                <h3>Book Your Ticket!</h3>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script>
+    
+</script>
+</html>
+
+
